@@ -2,13 +2,21 @@
 <html>
 <head>
   <style>
-    body { width: 150px; font-family: sans-serif; padding: 10px; text-align: center; }
+    body { width: 180px; font-family: sans-serif; padding: 10px; text-align: center; }
+    select { width: 100%; margin-bottom: 10px; padding: 5px; border-radius: 4px; }
     button { background: #1a73e8; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; width: 100%; }
     button:hover { background: #1557b0; }
   </style>
 </head>
 <body>
   <h3>Flex Filler</h3>
+  <select id="ratingSelect">
+    <option value="0">Strongly Agree</option>
+    <option value="1">Agree</option>
+    <option value="2">Uncertain</option>
+    <option value="3">Dissatisfied</option>
+    <option value="4">Strongly Disagree</option>
+  </select>
   <button id="fillBtn">Fill Form</button>
   <script src="popup.js"></script>
 </body>
